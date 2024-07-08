@@ -1,4 +1,4 @@
-function AuthLayout({ children }) {
+function InnerAuthLayout({ children }) {
   return (
     <div>
       <h2>Inner Auth Layout</h2>
@@ -7,4 +7,4 @@ function AuthLayout({ children }) {
   );
 }
 
-export default AuthLayout;
+export default InnerAuthLayout;
