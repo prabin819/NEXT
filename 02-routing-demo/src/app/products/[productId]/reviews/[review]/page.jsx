@@ -10,11 +10,11 @@ export default function Review({ params }) {
   //params available as a prop
   //params object contains route parameters as key value pairs
 
-  const random = getRandomInt(2);
+  // const random = getRandomInt(2);
 
-  if (random === 1) {
-    throw new Error("Error loading review.");
-  }
+  // if (random === 1) {
+  //   throw new Error("Error loading review.");
+  // }
 
   if (parseInt(params.review) > 1000) {
     notFound();

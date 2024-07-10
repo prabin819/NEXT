@@ -23,7 +23,8 @@
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx",
-    "src/app/products/[productId]/reviews/[review]/page.jsx"
+    "src/app/products/[productId]/reviews/[review]/page.jsx",
+    "src/app/products/error.jsx"
   ],
   "exclude": ["node_modules"]
 }
