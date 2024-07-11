@@ -16,5 +16,10 @@ export async function GET() {
 
   console.log(headerList.get("Authorization"));
 
-  return new Response("this is profile api");
+  //return new Response("<h1>this is profile api</h1>"); //rendered as it is cuz content type is text/plain
+  return new Response("<h1>this is profile api</h1>", {
+    headers: {
+      "Content-Type": "text/html",
+    },
+  }); //rendered as styled with H1 cuz content type is text/html
 }
