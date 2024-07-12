@@ -1,18 +1,18 @@
-import ImageSlider from "@/components/ImageSlider";
-import { serverSideFunction } from "../utils/server-utils";
+// import ImageSlider from "@/components/ImageSlider";
+// import { serverSideFunction } from "../utils/server-utils";
 
-export default function ServerRoutePage() {
-  console.log(`server route rendered`);
+// export default function ServerRoutePage() {
+//   console.log(`server route rendered`);
 
-  const result = serverSideFunction();
-  return (
-    <>
-      <h1>ServerRoutePage</h1>
-      <p>{result}</p>
-      <ImageSlider /> {/*behaves as client component*/}
-    </>
-  );
-}
+//   const result = serverSideFunction();
+//   return (
+//     <>
+//       <h1>ServerRoutePage</h1>
+//       <p>{result}</p>
+//       <ImageSlider /> {/*behaves as client component*/}
+//     </>
+//   );
+// }
 /*
 import React from "react";
 import Slider from "react-slick";
@@ -49,3 +49,17 @@ export default function ImageSlider() {
 //one solution => is to add "use client" directive within the server route but then you cannot use server  only features like database calls, env variables, etc.
 
 //to resolve this => you must encapsulate third party components that depend on client only features within your own client component
+
+import { serverSideFunction } from "../../utils/server-utils";
+
+export default function ServerRoutePage() {
+  console.log(`server route rendered`);
+
+  const result = serverSideFunction();
+  return (
+    <>
+      <h1>ServerRoutePage</h1>
+      <p>{result}</p>
+    </>
+  );
+}
